@@ -1,0 +1,25 @@
+.card {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.card-title {
+    font-size: 3.5rem;
+    margin: 0.8rem 0;
+    font-weight: 500;
+}
+
+.card-text{
+    color: var(--secondary-text);
+}

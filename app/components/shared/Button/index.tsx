@@ -1,9 +1,12 @@
-import '../Button/Button.css'
+import '../Button/Button.css';
+import Link from 'next/link'
 
-export default function Button() {
+export default function Button(prop: ButtonProps){ 
     return (
         <>
-            <button type="button" className="btn btn-primary pf-button">Primary</button>
+          <Link className="btn btn-primary pf-button" href={prop.link}>{prop.title}</Link>
         </>
     );
 }
+
+
