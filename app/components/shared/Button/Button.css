@@ -1,0 +1,21 @@
+.pf-button {
+    border: none;
+    background-color: var(--primary-btn-color);
+    color: var(--primary-background);
+    outline: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+}
+
+.pf-button:hover {
+    background-color: var(--primary-btn-color-hover);
+    color: var(--primary-background);
+}
+
+.pf-button:active,
+.pf-button:focus {
+    background-color: var(--primary-btn-color-hover);
+    outline: none;
+    border: none;
+    color: var(--primary-background);
+}

@@ -10,7 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <div className="container">
+          <div className="row">
+          {children}
+          </div>
+        </div>
         <BootstrapClient/>
       </body>
     </html>
