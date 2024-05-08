@@ -3,8 +3,9 @@
     background-color: var(--primary-btn-color);
     color: var(--primary-background);
     outline: none;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 3rem;
     font-weight: 500;
+    border-radius: 0.6rem;
 }
 
 .pf-button:hover {

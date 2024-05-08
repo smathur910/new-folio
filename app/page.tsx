@@ -1,12 +1,16 @@
 import Button from "./components/shared/Button";
 import Footer from "./components/shared/Footer"
+import './assets/css/global.css'
+import Home from "./(pages)/Home";
 
 export default function HomePage() {
   return (
     <>
-      <div className="col-12">
-        <h1 className="text-center">Welcome to My Portfolio</h1>
-        <Button />
+    <section className="header">
+
+    </section>
+      <div className="col-12 main-container">
+        <Home/>
       </div>
       <section className="footer">
         <Footer />
