@@ -6,6 +6,10 @@ import BootstrapClient from '../app/assets/vendor/js/BootstrapClient.js'
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
 import { usePathname, useSearchParams } from 'next/navigation'
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
+
 
 export default function RootLayout({
   children,

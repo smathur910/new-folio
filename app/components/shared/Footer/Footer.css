@@ -13,6 +13,32 @@
     align-items: center;
     border-radius: 100%;
 }
+
+.footer-text .title {
+    color: var(--primary-text);
+}
+
 .footer-text .link{
     color: var(--primary-btn-color);
+}
+
+.footer-card {
+    background-color: #121212;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    gap: 0.9rem;
+    box-shadow: 0px 0px 5px 1px rgb(79 255 107 / 15%);
+    cursor: pointer;
+    transition: all ease-in-out .9s;
+}
+.width19{
+    width: 19rem;
+}
+
+.footer-card:hover{
+    box-shadow: 0px 0px 5px 1px rgb(79 255 107 / 50%);
 }
