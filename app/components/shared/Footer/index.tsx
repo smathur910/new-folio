@@ -6,11 +6,13 @@ import { gsap } from 'gsap';
 import '../Footer/Footer.css';
 
 export default function Footer() {
+
     const div1Ref = useRef(null);
     const div2Ref = useRef(null);
     const div3Ref = useRef(null);
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
         const elements = [div1Ref.current, div2Ref.current, div3Ref.current];
         gsap.fromTo(elements, {
             opacity: 0,
@@ -26,7 +28,8 @@ export default function Footer() {
                 ease: 'power3.out',
                 stagger: 0.5,
             });
-    }, []);
+    }
+}, []);
 
     return (
         <div className="col-12 mt-4">
