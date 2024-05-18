@@ -1,6 +1,6 @@
 'use client'
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../app/assets/css/global.css';
 import BootstrapClient from '../app/assets/vendor/js/BootstrapClient.js'
 import Header from './components/shared/Header';
@@ -25,7 +25,7 @@ export default function RootLayout({
             <section className={`${pathname === '/' ? 'd-none' : 'header'}`}>
               <Header />
             </section>
-            <section className='main-container'>
+            <section className={`${pathname === '/' ? 'main-container' : 'container'}`}>
               {children}
             </section>
             <section className="footer">

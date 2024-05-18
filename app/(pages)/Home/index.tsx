@@ -42,12 +42,16 @@ export default function Home() {
             <div className="col-md-12">
                 <div className="card">
                     <div className="image-container">
+                    <>
+                    {typeof window !== 'undefined' && (
                     <Player
                         ref={playerRef}
                         size={180}
                         icon={ICON}
                         onComplete={() => playerRef.current?.playFromBeginning()}
                     />
+                )}
+                </>
                     <Image
                         src={profileImg}
                         alt="Picture of the author"
