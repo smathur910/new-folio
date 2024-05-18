@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withTM = require('next-transpile-modules')(['gsap']);
-module.exports = withTM();
+import withTM from 'next-transpile-modules';
+const withTMConfig = withTM(['gsap']);
+
 const nextConfig = {};
 
 export default nextConfig;

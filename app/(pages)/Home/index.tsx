@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import './Home.css'
 import profileImg from '../../assets/img/profile/profile.png'
@@ -6,8 +7,7 @@ import Button from "@/app/components/shared/Button";
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Player } from '@lordicon/react';
-
-const ICON = require('../../assets/img/json/loading.json');
+import ICON from '../../assets/img/json/loading.json';
 
 export default function Home() {
     const content1Ani = useRef(null);
@@ -15,7 +15,9 @@ export default function Home() {
     const buttonAni = useRef(null);
     const playerRef = useRef<Player>(null);
 
+
     useEffect(() => {
+        if (typeof window !== 'undefined') {
         const elements = [content1Ani.current, content2Ani.current, buttonAni.current];
 
         gsap.fromTo(elements, {
@@ -31,7 +33,8 @@ export default function Home() {
                 stagger: 0.5,
             });
         playerRef.current?.playFromBeginning();
-    }, []);
+    }
+}, []);
 
 
     return (
